@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home_fragment"
+            android:icon="@drawable/home_icon_fragment"
+            android:title="Home"/>
+        <item android:id="@+id/flights_search"
+            android:icon="@drawable/flight_icon"
+            android:title="Tìm kiếm chuyến bay"/>
+        <item android:id="@+id/my_reservation_ticket"
+            android:icon="@drawable/my_ticket_reserved"
+            android:title="Vé đã đặt"/>
+    </group>
+    <item android:title="Hồ sơ">
+        <menu>
+            <item android:id="@+id/my_profile"
+                android:icon="@drawable/user_without_icon"
+                android:title="Hồ sơ"/>
+            <item android:id="@+id/payment"
+                android:icon="@drawable/money_dollar"
+                android:title="Thanh toán"/>
+            <item android:id="@+id/logout"
+                android:icon="@drawable/logout_icon"
+                android:title="Đăng xuất"/>
+        </menu>
+    </item>
+</menu>

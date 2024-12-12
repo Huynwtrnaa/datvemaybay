@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.profile.EditProfileActivity">
+
+    <TextView
+        android:id="@+id/editProfileLabelLineUpper"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editProfileLabelLineLower"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dip"
+        app:layout_constraintBottom_toTopOf="@+id/editProfileButtonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/editProfileLabelLineLower2"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileUsernameInput" />
+
+    <TextView
+        android:id="@+id/editProfileLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Chỉnh sửa hồ sơ"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editProfileNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập tên của bạn"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileNameLabel" />
+
+    <TextView
+        android:id="@+id/editProfileNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tên:"
+        app:layout_constraintStart_toStartOf="@+id/editProfileNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileLabel" />
+
+    <TextView
+        android:id="@+id/editProfileSurnameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Họ:"
+        app:layout_constraintStart_toStartOf="@+id/editProfileSurnameInput"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileNameInput" />
+
+    <EditText
+        android:id="@+id/editProfileSurnameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập họ của bạn"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editProfileNameInput"
+        app:layout_constraintStart_toStartOf="@+id/editProfileNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileSurnameLabel" />
+
+    <TextView
+        android:id="@+id/editProfileEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="E-mail:"
+        app:layout_constraintStart_toStartOf="@+id/editProfileEmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileSurnameInput" />
+
+    <EditText
+        android:id="@+id/editProfileEmailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập e-mail của bạn"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/editProfileSurnameInput"
+        app:layout_constraintStart_toStartOf="@+id/editProfileSurnameInput"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileEmailLabel" />
+
+    <TextView
+        android:id="@+id/editProfileUsernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tên đăng nhập:"
+        app:layout_constraintStart_toStartOf="@+id/editProfileUsernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileEmailInput" />
+
+    <EditText
+        android:id="@+id/editProfileUsernameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập tên đăng nhập của bạn"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editProfileEmailInput"
+        app:layout_constraintStart_toStartOf="@+id/editProfileEmailInput"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileUsernameLabel" />
+
+    <Button
+        android:id="@+id/editProfileCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="Hủy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editProfileButtonSave" />
+
+    <Button
+        android:id="@+id/editProfileButtonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#983030"
+        android:fontFamily="sans-serif-light"
+        android:shadowColor="#983030"
+        android:text="Lưu hồ sơ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileLabelLineLower2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
